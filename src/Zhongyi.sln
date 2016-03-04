@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zhongyi.Service", "Zhongyi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zhongyi.ConsoleApplication", "Zhongyi.ConsoleApplication\Zhongyi.ConsoleApplication.csproj", "{F2062272-FA2F-4172-9F93-0EF04CD3C14B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zhongyi.Tests", "Zhongyi.Tests\Zhongyi.Tests.csproj", "{A9A8D519-AFAD-468D-A279-B04D9F7BDF0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{F2062272-FA2F-4172-9F93-0EF04CD3C14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2062272-FA2F-4172-9F93-0EF04CD3C14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2062272-FA2F-4172-9F93-0EF04CD3C14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A8D519-AFAD-468D-A279-B04D9F7BDF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A8D519-AFAD-468D-A279-B04D9F7BDF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A8D519-AFAD-468D-A279-B04D9F7BDF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A8D519-AFAD-468D-A279-B04D9F7BDF0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

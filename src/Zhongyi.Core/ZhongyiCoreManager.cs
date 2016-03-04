@@ -11,10 +11,14 @@ namespace Zhongyi.Core
         public ZhongyiCoreManager()
         {
             this.ZhongyaoManager = new ZhongyaoManager();
+            this.FangjiManager = new FangjiManager();
 
             this.ObjectManagers.Add(this.ZhongyaoManager);
+            this.ObjectManagers.Add(this.FangjiManager);
         }
 
         public ZhongyaoManager ZhongyaoManager { private set; get; }
+
+        public FangjiManager FangjiManager { private set; get; }
     }
 }

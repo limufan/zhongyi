@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zhongyi.ConsoleApplication.zhzyw;
 using Zhongyi.Service;
 
 namespace Zhongyi.ConsoleApplication
@@ -27,11 +28,11 @@ namespace Zhongyi.ConsoleApplication
                         Console.Write("$ ");
                         string cmd = Console.ReadLine();
                         cmd = cmd.TrimStart("$ ".ToArray());
-                        //if (cmd == "sjdr")
-                        //{
-                        //    LishiShujuDaoruGongju lishiShujuDaoruGongju = new LishiShujuDaoruGongju(serviceManager);
-                        //    lishiShujuDaoruGongju.Daoru();
-                        //}
+                        if (cmd == "本草纲目")
+                        {
+                            BencaoGangmuZhuaquGongju bencaoGangmuZhuaquGongju = new BencaoGangmuZhuaquGongju(serviceManager);
+                            bencaoGangmuZhuaquGongju.Zhuaqu(132, 1920);
+                        }
                         //else if (cmd.StartsWith("zzxg"))
                         //{
                         //    string[] cmds = cmd.Split(' ');

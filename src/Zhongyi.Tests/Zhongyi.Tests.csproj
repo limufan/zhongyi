@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2062272-FA2F-4172-9F93-0EF04CD3C14B}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{A9A8D519-AFAD-468D-A279-B04D9F7BDF0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Zhongyi.ConsoleApplication</RootNamespace>
-    <AssemblyName>Zhongyi.ConsoleApplication</AssemblyName>
+    <RootNamespace>Zhongyi.Tests</RootNamespace>
+    <AssemblyName>Zhongyi.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,6 +39,9 @@
     <Reference Include="Macrowing.Data">
       <HintPath>..\..\lib\Macrowing.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Macrowing.NUnit">
+      <HintPath>..\..\lib\Macrowing.NUnit.dll</HintPath>
+    </Reference>
     <Reference Include="Macrowing.Service">
       <HintPath>..\..\lib\Macrowing.Service.dll</HintPath>
     </Reference>
@@ -49,6 +50,12 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,21 +66,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ZHZYWZhuaquGongjuTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="zhzyw\BencaoGangmuZhuaquGongju.cs" />
-    <Compile Include="zhzyw\TaipingHuiminZhuaquGongju.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="Zhongyi.HB.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Zhongyi.Api\Zhongyi.Api.csproj">
       <Project>{3ee0f240-3fa9-42b3-a519-092bfd830bd1}</Project>
       <Name>Zhongyi.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zhongyi.ConsoleApplication\Zhongyi.ConsoleApplication.csproj">
+      <Project>{f2062272-fa2f-4172-9f93-0ef04cd3c14b}</Project>
+      <Name>Zhongyi.ConsoleApplication</Name>
     </ProjectReference>
     <ProjectReference Include="..\Zhongyi.Core\Zhongyi.Core.csproj">
       <Project>{1eaed0de-9684-4696-9e3d-ca3ed152ca7b}</Project>
@@ -88,7 +91,6 @@
       <Name>Zhongyi.Service</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

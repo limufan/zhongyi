@@ -6,8 +6,9 @@
     <property name="Xingwei" type="string" column="zhongyao_xingwei"/>
     <property name="Duxing" type="string" column="zhongyao_duxing"/>
     <property name="Guijing" type="string" column="zhongyao_guijing"/>
-    <property name="ShenongZhuzhi" type="string" column="zhongyao_shenongZhuzhi"/>
-    <property name="BieluZhuzhi" type="string" column="zhongyao_bieluZhuzhi"/>
-    <property name="BencaoZhuzhi" type="string" column="zhongyao_bencaoZhuzhi"/>
+    <property name="ShenongZhuzhi" type="string" length="2000" column="zhongyao_shenongZhuzhi"/>
+    <property name="BieluZhuzhi" type="string" length="2000" column="zhongyao_bieluZhuzhi"/>
+    <property name="BencaoZhuzhi" type="string" length="2000" column="zhongyao_bencaoZhuzhi"/>
+    <property name="BencaoJilu" type="string" length="20000" column="zhongyao_bencaoJilu"/>
   </class>
 </hibernate-mapping>

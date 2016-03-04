@@ -20,6 +20,8 @@ namespace Zhongyi.Service
 
         public ZhongyaoService ZhongyaoService { set; get; }
 
+        public FangjiService FangjiService { set; get; }
+
         public ZhongyiCoreManager ZhongyiCoreManager { set; get; }
 
         public ZhongyiDataManager ZhongyiDataManager { set; get; }
@@ -51,6 +53,7 @@ namespace Zhongyi.Service
             base.CreateServices();
 
             this.ZhongyaoService = new ZhongyaoService(this);
+            this.FangjiService = new FangjiService(this);
         }
 
         public override void PublishServices()
@@ -58,6 +61,7 @@ namespace Zhongyi.Service
             base.PublishServices();
 
             this.PublishService(this.ZhongyaoService);
+            this.PublishService(this.FangjiService);
         }
     }
 }

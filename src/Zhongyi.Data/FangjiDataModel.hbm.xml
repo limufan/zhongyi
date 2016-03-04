@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Zhongyi.Data" assembly="Zhongyi.Data">
+  <class name="FangjiDataModel" table="zy_fangji">
+    <id name="Id" type="string" column="fangji_id"></id>
+    <property name="Name" type="string" column="fangji_name"/>
+    <property name="Zhuzhi" type="string" length="2000" column="fangji_Zhuzhi"/>
+    <property name="Peifang" type="string" length="2000" column="fangji_Peifang"/>
+    <property name="Index" type="int" column="fangji_Index"/>
+    <property name="Beizhu" type="string" length="20000" column="fangji_Beizhu"/>
+  </class>
+</hibernate-mapping>

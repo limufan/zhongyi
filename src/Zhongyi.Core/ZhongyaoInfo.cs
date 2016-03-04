@@ -39,6 +39,11 @@ namespace Zhongyi.Core
         /// 本草纲目主治说明
         /// </summary>
         public string BencaoZhuzhi { set; get; }
+
+        /// <summary>
+        /// 本草纲目记录
+        /// </summary>
+        public string BencaoJilu { set; get; }
     }
 
     public class ZhongyaoInfo : ZhongyaoBaseInfo

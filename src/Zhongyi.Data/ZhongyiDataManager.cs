@@ -15,16 +15,20 @@ namespace Zhongyi.Data
         {
             this.ZhongyiCoreManager = coreManager;
             this.ZhongyaoDataProvider = new DataProvider<Zhongyao, ZhongyaoDataModel>(coreManager);
+            this.FangjiDataProvider = new DataProvider<Fangji, FangjiDataModel>(coreManager);
         }
 
         public ZhongyiCoreManager ZhongyiCoreManager { set; get; }
 
         public DataProvider<Zhongyao, ZhongyaoDataModel> ZhongyaoDataProvider { set; get; }
 
+        public DataProvider<Fangji, FangjiDataModel> FangjiDataProvider { set; get; }
+
         public override void Load()
         {
             base.Load();
             this.ZhongyaoDataProvider.Load();
+            this.FangjiDataProvider.Load();
         }
     }
 }

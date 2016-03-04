@@ -41,5 +41,10 @@ namespace Zhongyi.Data
         /// 本草纲目主治说明
         /// </summary>
         public virtual string BencaoZhuzhi { set; get; }
+
+        /// <summary>
+        /// 本草纲目记录
+        /// </summary>
+        public virtual string BencaoJilu { set; get; }
     }
 }

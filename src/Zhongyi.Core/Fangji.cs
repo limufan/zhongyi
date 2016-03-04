@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Zhongyi.Core
 {
-    public class Zhongyao
+    public class Fangji
     {
-        public Zhongyao(ZhongyaoInfo info)
+        public Fangji(FangjiInfo info)
         {
             this.SetInfo(info);
         }
@@ -21,39 +21,24 @@ namespace Zhongyi.Core
         public string Name { set; get; }
 
         /// <summary>
-        /// 性味
+        /// 主治
         /// </summary>
-        public string Xingwei { set; get; }
+        public string Zhuzhi { set; get; }
 
         /// <summary>
-        /// 毒性
+        /// 配方
         /// </summary>
-        public string Duxing { set; get; }
+        public string Peifang { set; get; }
 
         /// <summary>
-        /// 归经
+        /// 备注
         /// </summary>
-        public string Guijing { set; get; }
+        public string Beizhu { set; get; }
 
         /// <summary>
-        /// 神农本草主治说明
+        /// 排序
         /// </summary>
-        public string ShenongZhuzhi { set; get; }
-
-        /// <summary>
-        /// 别录主治说明
-        /// </summary>
-        public string BieluZhuzhi { set; get; }
-
-        /// <summary>
-        /// 本草纲目主治说明
-        /// </summary>
-        public string BencaoZhuzhi { set; get; }
-
-        /// <summary>
-        /// 本草纲目记录
-        /// </summary>
-        public string BencaoJilu { set; get; }
+        public int Index { set; get; }
 
         public string Keywords { private set; get; }
 
@@ -63,13 +48,13 @@ namespace Zhongyi.Core
             this.Keywords = "";
         }
 
-        private void SetInfo(ZhongyaoBaseInfo info)
+        private void SetInfo(FangjiBaseInfo info)
         {
             ObjectMapperHelper.Map(this, info);
             this.BuildKeyword();
         }
 
-        public void Change(ZhongyaoChangeInfo changeInfo)
+        public void Change(FangjiChangeInfo changeInfo)
         {
             this.SetInfo(changeInfo);
         }
