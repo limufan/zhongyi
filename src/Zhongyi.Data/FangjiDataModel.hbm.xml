@@ -3,9 +3,10 @@
   <class name="FangjiDataModel" table="zy_fangji">
     <id name="Id" type="string" column="fangji_id"></id>
     <property name="Name" type="string" column="fangji_name"/>
-    <property name="Zhuzhi" type="string" length="2000" column="fangji_Zhuzhi"/>
-    <property name="Peifang" type="string" length="2000" column="fangji_Peifang"/>
-    <property name="Index" type="int" column="fangji_Index"/>
-    <property name="Beizhu" type="string" length="20000" column="fangji_Beizhu"/>
+    <property name="Zhuzhi" type="string" length="2000" column="fangji_zhuzhi"/>
+    <property name="Peifang" type="string" length="2000" column="fangji_peifang"/>
+    <property name="Chuchu" type="string" column="fangji_chuchu"/>
+    <property name="Index" type="int" column="fangji_index"/>
+    <property name="Beizhu" type="string" length="20000" column="fangji_beizhu"/>
   </class>
 </hibernate-mapping>

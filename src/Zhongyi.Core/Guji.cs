@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Zhongyi.Core
 {
-    public class Fangji
+    public class Guji
     {
-        public Fangji(FangjiInfo info)
+        public Guji(GujiInfo info)
         {
             this.SetInfo(info);
         }
@@ -18,22 +18,20 @@ namespace Zhongyi.Core
         [ManagerPrimaryKey]
         public string Id { set; get; }
 
-        public string Name { set; get; }
+        /// <summary>
+        /// 标题
+        /// </summary>
+        public string Biaoti { set; get; }
 
         /// <summary>
-        /// 主治
+        /// 正文
         /// </summary>
-        public string Zhuzhi { set; get; }
+        public string Zhengwen { set; get; }
 
         /// <summary>
-        /// 配方
+        /// 排序
         /// </summary>
-        public string Peifang { set; get; }
-
-        /// <summary>
-        /// 备注
-        /// </summary>
-        public string Beizhu { set; get; }
+        public int Index { set; get; }
 
         /// <summary>
         /// 出处
@@ -41,9 +39,9 @@ namespace Zhongyi.Core
         public string Chuchu { set; get; }
 
         /// <summary>
-        /// 排序
+        /// 备注
         /// </summary>
-        public int Index { set; get; }
+        public string Beizhu { set; get; }
 
         public string Keywords { private set; get; }
 
@@ -53,13 +51,13 @@ namespace Zhongyi.Core
             this.Keywords = "";
         }
 
-        private void SetInfo(FangjiBaseInfo info)
+        private void SetInfo(GujiBaseInfo info)
         {
             ObjectMapperHelper.Map(this, info);
             this.BuildKeyword();
         }
 
-        public void Change(FangjiChangeInfo changeInfo)
+        public void Change(GujiChangeInfo changeInfo)
         {
             this.SetInfo(changeInfo);
         }

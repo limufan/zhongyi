@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Zhongyi.Data" assembly="Zhongyi.Data">
+  <class name="GujiDataModel" table="zy_guji">
+    <id name="Id" type="string" column="guji_id"></id>
+    <property name="Biaoti" type="string" column="guji_biaoti"/>
+    <property name="Zhengwen" type="string" length="20000" column="guji_zhengwen"/>
+    <property name="Index" type="int" column="guji_index"/>
+    <property name="Chuchu" type="string" column="guji_chuchu"/>
+    <property name="Beizhu" type="string" length="20000" column="guji_beizhu"/>
+  </class>
+</hibernate-mapping>

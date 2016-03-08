@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Zhongyi.ConsoleApplication.zhzyw;
 using Zhongyi.Service;
@@ -33,6 +34,13 @@ namespace Zhongyi.Tests
         {
             TaipingHuiminZhuaquGongju taipingHuiminZhuaquGongju = new TaipingHuiminZhuaquGongju(serviceManager);
             taipingHuiminZhuaquGongju.Zhuaqu(3, 3);
+        }
+
+        [Test]
+        public void ZhongyiGujiZhuaquGongjuTest()
+        {
+            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager);
+            zhongyiGujiZhuaquGongju.Zhuaqu(1, 1);
         } 
     }
 }

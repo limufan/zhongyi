@@ -61,6 +61,7 @@
     <Compile Include="ZhongyaoDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FangjiDataModel.cs" />
+    <Compile Include="GujiDataModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Zhongyi.Core\Zhongyi.Core.csproj">
@@ -73,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FangjiDataModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GujiDataModel.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="zhzyw\BencaoGangmuZhuaquGongju.cs" />
     <Compile Include="zhzyw\TaipingHuiminZhuaquGongju.cs" />
+    <Compile Include="zhzyw\ZhongyiGujiZhuaquGongju.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

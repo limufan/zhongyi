@@ -26,6 +26,11 @@ namespace Zhongyi.Core
         public string Beizhu { set; get; }
 
         /// <summary>
+        /// 出处
+        /// </summary>
+        public string Chuchu { set; get; }
+
+        /// <summary>
         /// 排序
         /// </summary>
         public int Index { set; get; }

@@ -85,6 +85,7 @@ namespace Zhongyi.ConsoleApplication.zhzyw
             createInfo.Zhuzhi = zhuzhi;
             createInfo.Peifang = peifang;
             createInfo.Index = index;
+            createInfo.Chuchu = "太平惠民合剂局";
 
             this._serviceManager.FangjiService.Create(createInfo);
         }
