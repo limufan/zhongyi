@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+	<script type="text/javascript" src="../../js/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+    <input id="txtKeyword" style="padding: 5px 10px;width: 300px" /><button style="padding: 5px 10px" id="btnHlight">高亮显示</button>
+    <label id="lblGujiCount"></label>
+    <a id="next"></a>
+    <label id="lblContent" style="display: none">
+&nbsp;&nbsp;&nbsp;&nbsp;附:薛己治疡通方　治一切疮疡,未成脓者内消,已成脓者即溃,又止痛,消毒之圣药也.穿山甲　白芷　防风　皂角刺　乳香　没药　当归尾　赤芍　花粉　贝母　陈皮　金银花　甘草,右十三味.用酒一碗.煎数沸服.【集注】罗谦甫曰:此疡门开手攻毒之第一方也.经云:营气不从,逆于肉理.故痈疽之发,未有不从营气之郁滞,因而血结痰滞蕴崇热毒为患.治之之法,妙在通经之结,行血之滞,佐之以豁痰理气解毒.是方穿山甲以攻坚,皂刺以达毒所,白芷,防风,陈皮通经理气而疏其滞,乳香定痛和血,没药破血散结,赤芍,归尾以驱血热而行之,以破其结.佐以贝母,金银花,甘草,一以豁痰解郁,一以散毒和血,其为溃坚止痛宜矣.然是方为营卫尚强,中气不亏者设.若脾胃素弱,营卫不调,则有托里消毒散之法,必须斟酌而用.此薛己所论千古不易之治也.因附治疡用方之法于后,使学者服膺云.薛己曰:治疡之法,若肿高焮痛者,先用仙方活命饮解之,后用托里败毒散.漫肿微痛者,用托里散,如不应加姜,桂.若脓出而反痛,气血虚也,八珍散.不作脓不腐溃,阳气虚也,四君加归,耆,肉桂.不生肌,不收敛,脾气虚也,四君加芍药,木香.恶寒憎寒,阳气虚也,十全大补加姜,桂.晡热内热,阴血虚也,四物加参,耆.欲呕作呕,胃气虚也,六君加炮姜.自汗,盗汗,五脏虚也,六味丸料加五味子.食少体倦,脾气虚也,补中益气加茯苓,半夏.喘促咳嗽,脾肺虚也,前汤加麦冬,五味.欲呕少食,脾胃虚也,人参理中汤.腹痛泄泻,脾胃虚寒也,附子理中汤.热渴淋秘,肾虚阴火也,加减八味丸.大凡怯弱之人,不必分其肿溃,惟当先补胃气.盖疮疡之作,缘阴阳亏损,其脓既泄,气血愈虚,岂有不宜补者哉!或疑参,耆满中,间有用者,又加发散败毒,所补不偿所损.又或以有疾不服补剂,因而致误者多矣.可胜惜哉!
+
+
+
+
+    </label>
+    <div id="hlightContent" style="font-size: 17pt">
+
+    </div>
+    
+</body>
+</html>
+<script type="text/javascript">
+    var content = $("#lblContent").html();
+    $("#hlightContent").html(content);
+
+    $("#btnHlight").click(function(){
+        var keywords = $("#txtKeyword").val().split(' ');
+        var hlightContent = content;
+        $.each(keywords, function(i, keyword){
+            hlightContent = hlightContent.replace(keyword, "<b style='color: red'>" + keyword + "</b>");
+        });
+        $("#hlightContent").html(hlightContent);
+
+        return false;
+    })
+</script>

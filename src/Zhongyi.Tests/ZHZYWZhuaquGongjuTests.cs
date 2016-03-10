@@ -39,7 +39,8 @@ namespace Zhongyi.Tests
         [Test]
         public void ZhongyiGujiZhuaquGongjuTest()
         {
-            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager);
+            string url = "http://www.zhzyw.org/zygjyd/book_show.php?id=0&name=%C9%F1%C5%A9%B1%BE%B2%DD%BE%AD&pian=";
+            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "神农本草经", url);
             zhongyiGujiZhuaquGongju.Zhuaqu(1, 1);
         } 
     }

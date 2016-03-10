@@ -78,7 +78,7 @@ namespace Zhongyi.ConsoleApplication.zhzyw
 
             createInfo.Biaoti = this.GetBiaoti(neirong);
             createInfo.Zhengwen = this.GetZhengwen(neirong);
-            createInfo.Beizhu = url + " " + content;
+            createInfo.Beizhu = url;
             createInfo.Index = index;
             createInfo.Chuchu = this._chuchu;
 

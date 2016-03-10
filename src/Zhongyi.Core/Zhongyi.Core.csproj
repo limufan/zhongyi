@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GujiFilter.cs" />
     <Compile Include="ZhongyiCoreManager.cs" />
     <Compile Include="ZhongyaoManager.cs" />
     <Compile Include="Zhongyao.cs" />

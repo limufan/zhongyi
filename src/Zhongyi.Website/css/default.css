@@ -1,0 +1,26 @@
+﻿
+.navbar-brand-logo 
+{
+    padding-left: 120px;
+    background: url(../img/logo.gif) no-repeat 15px 50%;
+}
+.requiredSign{color: Red;font-size:.8em; }
+.form-table{
+    width: 100%;
+}
+.form-table td{
+    vertical-align: top;
+}
+.loading
+{
+    border:1px solid #646464;
+	z-index:10000;
+    position:absolute;
+    background:#fff url(../img/ajax_loading.gif) no-repeat 2px center;
+    padding-left:50px;
+    line-height:27px;
+    left:50%;
+    top:50%;
+    height: 5em;
+    width: 5em;
+}

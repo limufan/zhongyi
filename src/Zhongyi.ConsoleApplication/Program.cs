@@ -98,6 +98,36 @@ namespace Zhongyi.ConsoleApplication
                             ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "小儿药证直诀", url);
                             zhongyiGujiZhuaquGongju.Zhuaqu(0, 219);
                         }
+                        else if (cmd == "兰室秘藏数据抓取")
+                        {
+                            string url = "http://www.zhzyw.org/zygjyd/book_show.php?id=581&name=%C0%BC%CA%D2%C3%D8%B2%D8&pian=";
+                            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "兰室秘藏", url);
+                            zhongyiGujiZhuaquGongju.Zhuaqu(0, 299);
+                        }
+                        else if (cmd == "备急千金要方数据抓取")
+                        {
+                            string url = "http://www.zhzyw.org/zygjyd/book_show.php?id=532&name=%B1%B8%BC%B1%C7%A7%BD%F0%D2%AA%B7%BD&pian=";
+                            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "备急千金要方", url);
+                            zhongyiGujiZhuaquGongju.Zhuaqu(0, 1810);
+                        }
+                        else if (cmd == "千金翼方数据抓取")
+                        {
+                            string url = "http://www.zhzyw.org/zygjyd/book_show.php?id=51&name=%C7%A7%BD%F0%D2%ED%B7%BD&pian=";
+                            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "千金翼方", url);
+                            zhongyiGujiZhuaquGongju.Zhuaqu(0, 1991);
+                        }
+                        else if (cmd == "饮膳正要数据抓取")
+                        {
+                            string url = "http://www.zhzyw.org/zygjyd/book_show.php?id=9&name=%D2%FB%C9%C5%D5%FD%D2%AA&pian=";
+                            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "饮膳正要", url);
+                            zhongyiGujiZhuaquGongju.Zhuaqu(0, 484);
+                        }
+                        else if (cmd == "神农本草经数据抓取")
+                        {
+                            string url = "http://www.zhzyw.org/zygjyd/book_show.php?id=0&name=%C9%F1%C5%A9%B1%BE%B2%DD%BE%AD&pian=";
+                            ZhongyiGujiZhuaquGongju zhongyiGujiZhuaquGongju = new ZhongyiGujiZhuaquGongju(serviceManager, "神农本草经", url);
+                            zhongyiGujiZhuaquGongju.Zhuaqu(0, 377);
+                        }
                     }
                     catch (Exception ex)
                     {
